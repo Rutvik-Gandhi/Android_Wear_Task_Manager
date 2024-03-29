@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RutvikGandhiAssignment2</string>
+    <string name="tasknameIntent">TaskName</string>
+    <string name="taskidIntent">TaskId</string>
+    <string name="voiceinput_shared">voiceInput</string>
+    <string name="selecteddatetime_shared">selectedDateTime</string>
+    <string name="taskid_shared">TaskID</string>
+    <string name="task_is_empty"><![CDATA[Task name and due date & time cannot be empty]]></string>
+    <string name="task_added">Task added successfully</string>
+</resources>

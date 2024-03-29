@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="5dp"
+    tools:ignore="MissingClass">
+
+    <!-- Vertical LinearLayout to arrange child views vertically -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        app:layout_boxedEdges="all"
+        android:weightSum="4"> <!-- Set weightSum to the total number of child views -->
+
+        <!-- TextView for displaying Task ID -->
+        <TextView
+            android:id="@+id/textViewTaskID"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Task Name"
+            android:visibility="gone"/>
+
+        <!-- TextView for displaying Due Date & Time -->
+        <TextView
+            android:id="@+id/textViewTBD"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:text="Due Date &amp; Time: TBD (To Be Determined)"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <!-- Button for initiating voice input -->
+        <Button
+            android:id="@+id/btnVoiceInput"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_weight="1"
+            android:onClick="startVoiceInput"
+            android:text="Voice Input"
+            android:textSize="8dp"
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+        <!-- Button for choosing Due Date & Time -->
+        <Button
+            android:id="@+id/btnchooseDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_weight="1"
+            android:onClick="pickDateTime"
+            android:text="Pick Due Date &amp; Time"
+            android:textSize="8dp"
+
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+        <!-- Button for adding more tasks -->
+        <Button
+            android:id="@+id/btnAddMoreTask"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginLeft="-19dp"
+            android:layout_weight="1"
+            android:onClick="addTask"
+            android:text="Add Task"
+            android:textSize="8sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+</androidx.wear.widget.BoxInsetLayout>
