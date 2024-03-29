@@ -35,10 +35,6 @@ This Android application allows users to manage their tasks efficiently. It incl
 - AndroidX libraries
 - Data Binding Library
 
-## Screenshots
-
-[Include screenshots here]
-
 ## Contributing
 
 Contributions are welcome! Please follow the contribution guidelines outlined in the CONTRIBUTING.md file.
@@ -49,8 +45,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Authors
 
-- [Your Name](https://github.com/yourusername)
-
-## Acknowledgements
-
-- [List of acknowledgements if any]
+- Rutvik Gandhi (https://github.com/Rutvik-Gandhi)
